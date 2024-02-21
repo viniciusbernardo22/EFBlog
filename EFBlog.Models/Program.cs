@@ -1,4 +1,5 @@
 ﻿using System;
+using EFBlog.Models.Data;
 
 namespace EFBlog.Models
 {
@@ -6,7 +7,10 @@ namespace EFBlog.Models
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (var context = new BlogDataContext())
+            {
+                
+            }
         }
     }
 }
