@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFBlog.Models", "EFBlog.Models\EFBlog.Models.csproj", "{C005E7CF-D92C-452E-A5F9-FD25F1FC5F8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFBlog", "EFBlog\EFBlog.csproj", "{C005E7CF-D92C-452E-A5F9-FD25F1FC5F8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
