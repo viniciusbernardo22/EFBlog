@@ -1,5 +1,5 @@
 ﻿using System;
-using EFBlog.Models.Data;
+using EFBlog.Data;
 
 namespace EFBlog
 {
