@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EFBlog.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace EFBlog.Models.Data
+namespace EFBlog.Data
 {
     public class BlogDataContext : DbContext
     {
