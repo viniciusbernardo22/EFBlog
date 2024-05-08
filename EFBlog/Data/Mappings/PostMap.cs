@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using EFBlog.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EFBlog.Models.Data.Mappings
+namespace EFBlog.Data.Mappings
 {
     public class PostMap : IEntityTypeConfiguration<Post>
     {
