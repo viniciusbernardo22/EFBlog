@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using EFBlog.Data;
+using EFBlog.Models;
 
 namespace EFBlog
 {
@@ -7,10 +9,7 @@ namespace EFBlog
     {
         static void Main(string[] args)
         {
-            using (var context = new BlogDataContext())
-            {
-                
-            }
+
         }
     }
 }
