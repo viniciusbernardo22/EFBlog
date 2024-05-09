@@ -1,4 +1,5 @@
-﻿using EFBlog.Models;
+﻿using EFBlog.Data.Mappings;
+using EFBlog.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EFBlog.Data
@@ -13,8 +14,14 @@ namespace EFBlog.Data
 
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=Blog;User ID=sa;Password=1q2w3e4r@#$;Trusted_Connection=False; TrustServerCertificate=True;");
-            
-        
+            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=EFBlog;User ID=sa;Password=1q2w3e4r@#$;Trusted_Connection=False; TrustServerCertificate=True;");
+
+        //Usar mapeamentos
+        protected override void OnModelCreating(ModelBuilder mb)
+        {
+            mb.ApplyConfiguration(new CategoryMap());
+            mb.ApplyConfiguration(new PostMap());
+            mb.ApplyConfiguration(new UserMap());
+        }
     }
 }
